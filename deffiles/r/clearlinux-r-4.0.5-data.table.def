@@ -1,0 +1,17 @@
+Bootstrap: docker
+From: clearlinux/r-base:4.0.5
+
+%post
+    Rscript -e 'install.packages("data.table", repos = c("https://cloud.r-project.org"))'
+
+%test
+    R --version
+
+%environment
+    export LC_ALL=C
+
+%runscript
+    R
+
+%help
+    Based on the Clear Linux r-base:4.0.5 Docker image. Base R 4.0.5 built with OpenBLAS. Packages installed: data.table
