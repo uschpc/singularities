@@ -6,7 +6,7 @@ From: tensorflow/tensorflow:2.4.1-gpu
     apt-get -y clean
 
 %test
-    python -c 'import tensorflow as tf; print("TF version: " + tf.__version__)'
+    python -c 'import tensorflow as tf; print("TensorFlow version: " + tf.__version__)'
 
 %environment
     export LC_ALL=C
@@ -15,4 +15,4 @@ From: tensorflow/tensorflow:2.4.1-gpu
     python
 
 %help
-    Based on the official tensorflow/tensorflow:2.4.1-gpu Docker image. Ubuntu 18.04 with Tensorflow 2.4.1.
+    Based on the official tensorflow/tensorflow:2.4.1-gpu Docker image. Ubuntu 18.04 with TensorFlow 2.4.1.
