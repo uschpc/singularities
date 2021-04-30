@@ -1,0 +1,17 @@
+Bootstrap: docker
+From: clearlinux/tensorflow:2.3.1
+
+%post
+
+
+%test
+    python -c 'import tensorflow as tf; print("TF version: " + tf.__version__)'
+
+%environment
+    export LC_ALL=C
+
+%runscript
+    python
+
+%help
+    Based on the official Clear Linux tensorflow:2.3.1 Docker image.

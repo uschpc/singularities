@@ -1,0 +1,17 @@
+Bootstrap: docker
+From: clearlinux/python:3.9.4
+
+%post
+
+
+%test
+    python --version
+
+%environment
+    export LC_ALL=C
+
+%runscript
+    python
+
+%help
+    Based on the official Clear Linux python:3.9.4 Docker image.

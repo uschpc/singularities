@@ -1,0 +1,18 @@
+Bootstrap: docker
+From: tensorflow/tensorflow:2.4.1-gpu
+
+%post
+    apt-get -y autoremove --purge
+    apt-get -y clean
+
+%test
+    python -c 'import tensorflow as tf; print("TF version: " + tf.__version__)'
+
+%environment
+    export LC_ALL=C
+
+%runscript
+    python
+
+%help
+    Based on the official tensorflow/tensorflow:2.4.1-gpu Docker image. Ubuntu 18.04 with Tensorflow 2.4.1.
