@@ -1,0 +1,22 @@
+Bootstrap: docker
+From: sysstacks/hpcrs-centos:v0.3.0
+
+%post
+    yum -y autoremove
+    yum -y clean all
+
+%test
+    export PATH=/opt/intel/oneapi/compiler/2021.1.2/linux/bin:$PATH
+    export LD_LIBRARY_PATH=/opt/intel/oneapi/compiler/2021.1.2/linux/compiler/lib/intel64_lin:$LD_LIBRARY_PATH
+    dpcpp --version
+
+%environment
+    export LC_ALL=C
+    export PATH=/opt/intel/oneapi/compiler/2021.1.2/linux/bin:$PATH
+    export LD_LIBRARY_PATH=/opt/intel/oneapi/compiler/2021.1.2/linux/compiler/lib/intel64_lin:$LD_LIBRARY_PATH
+
+%runscript
+    python
+
+%help
+    Intel HPC Reference Stack v0.3.0 with CentOS 8 and Intel oneAPI, PyTorch, Horovod, Spack, and other packages. Based on the official Intel sysstacks/hpcrs-centos:v0.3.0 Docker image.
