@@ -1,0 +1,26 @@
+Bootstrap: docker
+From: clearlinux
+
+%post
+    swupd bundle-add --quiet wget
+    swupd clean --all
+
+    mkdir /opt
+    cd /opt
+    wget -q https://julialang-s3.julialang.org/bin/linux/x64/1.6/julia-1.6.1-linux-x86_64.tar.gz
+    tar -xf julia-1.6.1-linux-x86_64.tar.gz
+    rm julia-1.6.1-linux-x86_64.tar.gz
+
+%test
+    export PATH=/opt/julia-1.6.1/bin:$PATH
+    julia --version
+
+%environment
+    export LC_ALL=C
+    export PATH=/opt/julia-1.6.1/bin:$PATH
+
+%runscript
+    julia
+
+%help
+    Clear Linux with base Julia 1.6.1.
