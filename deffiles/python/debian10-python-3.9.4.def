@@ -1,0 +1,17 @@
+Bootstrap: docker
+From: python:3.9.4
+
+%post
+
+
+%test
+    python --version
+
+%environment
+    export LC_ALL=C
+
+%runscript
+    python
+
+%help
+    Based on the official python:3.9.4 Docker image. Debian 10 with base Python 3.9.4.
