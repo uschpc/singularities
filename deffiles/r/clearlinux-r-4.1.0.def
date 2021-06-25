@@ -1,0 +1,17 @@
+Bootstrap: docker
+From: clearlinux/r-base:4.1.0
+
+%post
+
+
+%test
+    R --version
+
+%environment
+    export LC_ALL=C
+
+%runscript
+    R
+
+%help
+    Based on the Clear Linux r-base:4.1.0 Docker image. Base R 4.1.0 built with OpenBLAS.
