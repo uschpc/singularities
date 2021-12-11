@@ -14,6 +14,7 @@ This repo stores various Singularity definition files to build container images 
 [Docker Hub](https://hub.docker.com/)  
 [BioContainers](https://biocontainers.pro)  
 [Dockstore](https://dockstore.org/)  
+[Intel oneContainer Portal](https://www.intel.com/content/www/us/en/developer/tools/containers/overview.html)  
 [NVIDIA GPU Cloud Catalog](https://ngc.nvidia.com/catalog)
 
 ## License
