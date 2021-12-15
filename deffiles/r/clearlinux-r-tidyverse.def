@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: clearlinux/r-base:4.1.0
+From: clearlinux/r-base:latest
 
 %post
     Rscript -e 'install.packages("tidyverse", repos = "http://cran.us.r-project.org")'
@@ -14,4 +14,4 @@ From: clearlinux/r-base:4.1.0
     R
 
 %help
-    Based on the Clear Linux r-base:4.1.0 Docker image. Base R 4.1.0 built with OpenBLAS. Packages installed: tidyverse family
+    Clear Linux with latest version of R linked to OpenBLAS and tidyverse family of packages installed.

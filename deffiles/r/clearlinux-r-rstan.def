@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: clearlinux/r-base:4.1.0
+From: clearlinux/r-base:latest
 
 %post
     swupd update --quiet
@@ -16,4 +16,4 @@ From: clearlinux/r-base:4.1.0
     R
 
 %help
-    Based on the Clear Linux r-base:4.1.0 Docker image. Base R 4.1.0 built with OpenBLAS. Packages installed: rstan
+    Clear Linux with latest version of R linked to OpenBLAS and rstan package installed.
