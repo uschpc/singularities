@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: tensorflow/tensorflow:2.4.1-gpu
+From: tensorflow/tensorflow:latest-gpu
 
 %post
     apt-get -y autoremove --purge
@@ -15,4 +15,4 @@ From: tensorflow/tensorflow:2.4.1-gpu
     python
 
 %help
-    Based on the official tensorflow/tensorflow:2.4.1-gpu Docker image. Ubuntu 18.04 with TensorFlow 2.4.1.
+    Ubuntu 18.04 with latest version of TensorFlow.

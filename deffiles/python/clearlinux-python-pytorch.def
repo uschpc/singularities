@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: clearlinux/python:3.9.4
+From: clearlinux/python:latest
 
 %post
     swupd bundle-add --quiet machine-learning-pytorch
@@ -15,4 +15,4 @@ From: clearlinux/python:3.9.4
     python
 
 %help
-    Based on the official Clear Linux python:3.9.4 Docker image with the latest machine-learning-pytorch bundle installed.
+    Clear Linux with latest version of PyTorch.

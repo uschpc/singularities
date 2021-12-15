@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: clearlinux/tensorflow:2.3.1
+From: clearlinux/tensorflow:latest
 
 %post
 
@@ -14,4 +14,4 @@ From: clearlinux/tensorflow:2.3.1
     python
 
 %help
-    Based on the official Clear Linux tensorflow:2.3.1 Docker image.
+    Clear Linux with latest version of TensorFlow.

@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: clearlinux/python:3.9.4
+From: python:latest
 
 %post
 
@@ -14,4 +14,4 @@ From: clearlinux/python:3.9.4
     python
 
 %help
-    Based on the official Clear Linux python:3.9.4 Docker image.
+    Debian 10 with latest version of Python.
