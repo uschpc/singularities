@@ -1,5 +1,5 @@
-Bootstrap: docker
-From: rockylinux/rockylinux:8
+Bootstrap: library
+From: rockylinux:8
 
 %post
     dnf -y upgrade
