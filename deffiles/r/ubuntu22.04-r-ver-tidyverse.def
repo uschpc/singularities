@@ -17,4 +17,4 @@ From: rocker/r-ver:latest
     R
 
 %help
-    Ubuntu 20.04 with latest version of R linked to OpenBLAS and tidyverse family of packages installed.
+    Ubuntu 22.04 with latest version of R linked to OpenBLAS and tidyverse family of packages installed.

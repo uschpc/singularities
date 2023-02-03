@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: rocker/geospatial:latest
+From: rocker/r-ver:latest
 
 %post
     apt-get -y autoremove --purge
@@ -15,4 +15,4 @@ From: rocker/geospatial:latest
     R
 
 %help
-    Ubuntu 20.04 with latest version of R linked to OpenBLAS and various geospatial-related R packages installed.
+    Ubuntu 22.04 with latest version of R linked to OpenBLAS.
