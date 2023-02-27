@@ -1,0 +1,15 @@
+Bootstrap: library
+From: alpine:latest
+
+%post
+    apk update
+    apk upgrade
+
+%test
+    cat /etc/os-release
+
+%environment
+    export LC_ALL=C
+
+%help
+    Minimal container with Alpine Linux.
