@@ -4,7 +4,7 @@ This repo stores various Singularity definition files for building container ima
 
 ## Additional resources
 
-- [Using Singularity on CARC systems](https://carc.usc.edu/user-information/user-guides/software-and-programming/singularity)
+- [Using Singularity on CARC HPC clusters](https://carc.usc.edu/user-information/user-guides/software-and-programming/singularity)
 - [CARC Singularity workshop materials](https://github.com/uschpc/workshop-singularity)
 - [Singularity website](https://sylabs.io/singularity/)
 - [Singularity documentation](https://sylabs.io/guides/latest/user-guide/)
