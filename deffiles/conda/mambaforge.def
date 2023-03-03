@@ -1,0 +1,23 @@
+Bootstrap: docker
+From: condaforge/mambaforge:latest
+
+%post
+    eval "$(conda shell.bash hook)"
+    mamba create -n myenv
+    conda activate myenv
+    mamba install --quiet --yes python=3.11.0
+    conda clean --all --quiet --yes
+
+%test
+    eval "$(conda shell.bash hook)"
+    conda activate myenv
+    python --version
+
+%environment
+    export LC_ALL=C
+
+%help
+    Containerized Conda environment using mambaforge.
+    When running the container, run:
+        eval "$(conda shell.bash hook)"
+    first in order to activate the Conda environment.
