@@ -1,0 +1,16 @@
+Bootstrap: library
+From: almalinux:8
+
+%post
+    dnf -y upgrade
+    dnf -y autoremove
+    dnf -y clean all
+
+%test
+    cat /etc/os-release
+
+%environment
+    export LC_ALL=C
+
+%help
+    Minimal container with AlmaLinux 8.
