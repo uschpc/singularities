@@ -1,7 +1,9 @@
 Bootstrap: docker
-From: pytorch/pytorch:latest
+From: pytorch/pytorch:2.3.1-cuda12.1-cudnn8-runtime
 
 %post
+    apt-get -y update
+    apt-get -y upgrade
     apt-get -y autoremove --purge
     apt-get -y clean
 
@@ -15,4 +17,4 @@ From: pytorch/pytorch:latest
     python
 
 %help
-    Ubuntu 18.04 with latest version of PyTorch.
+    Ubuntu 22.04 with PyTorch 2.3.1.
