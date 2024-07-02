@@ -1,6 +1,12 @@
 Bootstrap: docker
 From: python:latest
 
+%post
+    apt-get -y update
+    apt-get -y upgrade
+    apt-get -y autoremove --purge
+    apt-get -y clean
+
 %test
     python --version
 
