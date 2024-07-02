@@ -8,7 +8,7 @@ This repo stores various Singularity definition files for building container ima
 - [CARC Singularity workshop materials](https://github.com/uschpc/workshop-singularity)
 - [Singularity website](https://sylabs.io/singularity/)
 - [Singularity documentation](https://sylabs.io/guides/latest/user-guide/)
-- [Singularity tutorial](https://singularity-tutorial.github.io/)
+- [Singularity tutorial](https://sylabs.github.io/singularity101/)
 - [Singularity Remote Builder](https://cloud.sylabs.io/builder)
 
 Container registries:
@@ -17,9 +17,8 @@ Container registries:
 - [Docker Hub](https://hub.docker.com/)
 - [BioContainers](https://biocontainers.pro)
 - [Dockstore](https://dockstore.org/)
-- [Intel oneContainer Portal](https://www.intel.com/content/www/us/en/developer/tools/containers/overview.html)
-- [NVIDIA GPU Cloud Catalog](https://ngc.nvidia.com/catalog)
+- [NVIDIA GPU Cloud Catalog](https://catalog.ngc.nvidia.com/containers)
 
 ## License
 
-[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+[0BSD](LICENSE)
