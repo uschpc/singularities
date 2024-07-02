@@ -1,0 +1,16 @@
+Bootstrap: docker
+From: nvcr.io/nvidia/nvhpc:24.5-devel-cuda12.4-rockylinux8
+
+%post
+    dnf -y upgrade
+    dnf -y autoremove
+    dnf -y clean all
+
+%test
+    nvcc --version
+
+%environment
+    export LC_ALL=C
+
+%help
+    Rocky Linux 8 with NVIDIA HPC SDK 24.5.
