@@ -2,8 +2,8 @@ Bootstrap: docker
 From: rocker/r-ver:latest
 
 %post
-    Rscript -e 'install.packages("tidyverse")'
-
+    apt-get -y update
+    apt-get -y upgrade
     apt-get -y autoremove --purge
     apt-get -y clean
 
@@ -17,4 +17,4 @@ From: rocker/r-ver:latest
     R
 
 %help
-    Ubuntu 22.04 with latest version of R linked to OpenBLAS and tidyverse family of packages installed.
+    Ubuntu with latest version of R linked to OpenBLAS.

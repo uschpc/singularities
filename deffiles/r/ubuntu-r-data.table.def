@@ -2,8 +2,12 @@ Bootstrap: docker
 From: rocker/r-ver:latest
 
 %post
+    apt-get -y update
+    apt-get -y upgrade
     apt-get -y autoremove --purge
     apt-get -y clean
+
+    Rscript -e 'install.packages("data.table")'
 
 %test
     R --version
@@ -15,4 +19,4 @@ From: rocker/r-ver:latest
     R
 
 %help
-    Ubuntu 22.04 with latest version of R linked to OpenBLAS.
+    Ubuntu with latest version of R linked to OpenBLAS and data.table package installed.

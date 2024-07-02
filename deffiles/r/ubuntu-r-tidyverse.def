@@ -1,0 +1,20 @@
+Bootstrap: docker
+From: rocker/tidyverse:latest
+
+%post
+    apt-get -y update
+    apt-get -y upgrade
+    apt-get -y autoremove --purge
+    apt-get -y clean
+
+%test
+    R --version
+
+%environment
+    export LC_ALL=C
+
+%runscript
+    R
+
+%help
+    Ubuntu with latest version of R linked to OpenBLAS and tidyverse family of packages installed.

@@ -2,6 +2,8 @@ Bootstrap: docker
 From: rocker/geospatial:latest
 
 %post
+    apt-get -y update
+    apt-get -y upgrade
     apt-get -y autoremove --purge
     apt-get -y clean
 
@@ -15,4 +17,4 @@ From: rocker/geospatial:latest
     R
 
 %help
-    Ubuntu 22.04 with latest version of R linked to OpenBLAS and various geospatial-related R packages installed.
+    Ubuntu with latest version of R linked to OpenBLAS and various geospatial-related R packages installed.
