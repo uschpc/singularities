@@ -1,0 +1,20 @@
+Bootstrap: docker
+From: julia:latest
+
+%post
+    apt-get -y update
+    apt-get -y upgrade
+    apt-get -y autoremove --purge
+    apt-get -y clean
+
+%test
+    julia --version
+
+%environment
+    export LC_ALL=C
+
+%runscript
+    julia
+
+%help
+    Latest version of Debian with latest version of Julia.
