@@ -5,8 +5,8 @@ From: condaforge/mambaforge:latest
     eval "$(conda shell.bash hook)"
     mamba create -n myenv
     conda activate myenv
-    mamba install --quiet --yes python=3.11.0
-    conda clean --all --quiet --yes
+    mamba install --quiet --yes python
+    mamba clean --all --quiet --yes
 
 %test
     eval "$(conda shell.bash hook)"
