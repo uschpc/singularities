@@ -13,4 +13,4 @@ From: python:latest
     python
 
 %help
-    Latest version of Debian with latest version of Python.
+    Debian with latest version of Python.
