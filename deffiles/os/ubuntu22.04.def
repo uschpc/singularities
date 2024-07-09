@@ -10,8 +10,5 @@ From: ubuntu:22.04
 %test
     cat /etc/os-release
 
-%environment
-    export LC_ALL=C
-
 %help
     Minimal container with Ubuntu 22.04.

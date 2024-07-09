@@ -10,8 +10,5 @@ From: debian:12
 %test
     cat /etc/os-release
 
-%environment
-    export LC_ALL=C
-
 %help
     Minimal container with Debian 12.

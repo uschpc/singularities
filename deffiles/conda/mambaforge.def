@@ -13,9 +13,6 @@ From: condaforge/mambaforge:latest
     conda activate myenv
     python --version
 
-%environment
-    export LC_ALL=C
-
 %help
     Containerized Conda environment using mambaforge.
     When running the container, run:

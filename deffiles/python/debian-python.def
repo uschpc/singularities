@@ -10,9 +10,6 @@ From: python:latest
 %test
     python --version
 
-%environment
-    export LC_ALL=C
-
 %runscript
     python
 

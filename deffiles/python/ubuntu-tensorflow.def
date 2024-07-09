@@ -10,9 +10,6 @@ From: tensorflow/tensorflow:latest-gpu
 %test
     python -c 'import tensorflow as tf; print("TensorFlow version: " + tf.__version__)'
 
-%environment
-    export LC_ALL=C
-
 %runscript
     python
 

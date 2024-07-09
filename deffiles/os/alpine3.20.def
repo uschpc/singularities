@@ -8,8 +8,5 @@ From: alpine:3.20
 %test
     cat /etc/os-release
 
-%environment
-    export LC_ALL=C
-
 %help
     Minimal container with Alpine Linux 3.20.

@@ -9,8 +9,5 @@ From: centos:7
 %test
     cat /etc/os-release
 
-%environment
-    export LC_ALL=C
-
 %help
     Minimal container with CentOS 7.

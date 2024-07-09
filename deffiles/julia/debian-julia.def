@@ -10,9 +10,6 @@ From: julia:latest
 %test
     julia --version
 
-%environment
-    export LC_ALL=C
-
 %runscript
     julia
 

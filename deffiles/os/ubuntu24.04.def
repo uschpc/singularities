@@ -10,8 +10,5 @@ From: ubuntu:24.04
 %test
     cat /etc/os-release
 
-%environment
-    export LC_ALL=C
-
 %help
     Minimal container with Ubuntu 24.04.

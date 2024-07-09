@@ -9,8 +9,5 @@ From: almalinux:9
 %test
     cat /etc/os-release
 
-%environment
-    export LC_ALL=C
-
 %help
     Minimal container with AlmaLinux 9.

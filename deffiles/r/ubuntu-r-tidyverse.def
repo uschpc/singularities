@@ -10,9 +10,6 @@ From: rocker/tidyverse:latest
 %test
     R --version
 
-%environment
-    export LC_ALL=C
-
 %runscript
     R
 

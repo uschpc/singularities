@@ -8,8 +8,5 @@ From: clearlinux:base
 %test
     cat /etc/os-release
 
-%environment
-    export LC_ALL=C
-
 %help
     Minimal container with latest Clear Linux OS.

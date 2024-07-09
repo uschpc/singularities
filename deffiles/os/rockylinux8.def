@@ -9,8 +9,5 @@ From: rockylinux:8
 %test
     cat /etc/os-release
 
-%environment
-    export LC_ALL=C
-
 %help
     Minimal container with Rocky Linux 8.
