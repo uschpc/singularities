@@ -4,7 +4,6 @@ From: debian:11
 %post
     apt-get -y update
     apt-get -y upgrade
-    apt-get -y autoremove --purge
     apt-get -y clean
 
 %test

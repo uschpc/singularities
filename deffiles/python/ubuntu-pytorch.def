@@ -4,7 +4,6 @@ From: pytorch/pytorch:2.3.1-cuda12.1-cudnn8-runtime
 %post
     apt-get -y update
     apt-get -y upgrade
-    apt-get -y autoremove --purge
     apt-get -y clean
 
 %test

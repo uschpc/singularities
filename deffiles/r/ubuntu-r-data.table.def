@@ -4,7 +4,6 @@ From: rocker/r-ver:latest
 %post
     apt-get -y update
     apt-get -y upgrade
-    apt-get -y autoremove --purge
     apt-get -y clean
 
     Rscript -e 'install.packages("data.table")'

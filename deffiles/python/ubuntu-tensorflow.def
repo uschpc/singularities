@@ -4,7 +4,6 @@ From: tensorflow/tensorflow:latest-gpu
 %post
     apt-get -y update
     apt-get -y upgrade
-    apt-get -y autoremove --purge
     apt-get -y clean
 
 %test

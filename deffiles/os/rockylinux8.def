@@ -3,7 +3,6 @@ From: rockylinux:8
 
 %post
     dnf -y upgrade
-    dnf -y autoremove
     dnf -y clean all
 
 %test

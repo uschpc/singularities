@@ -3,7 +3,6 @@ From: centos:7
 
 %post
     yum -y upgrade
-    yum -y autoremove
     yum -y clean all
 
 %test
