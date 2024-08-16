@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: condaforge/mambaforge:latest
+From: condaforge/miniforge3:latest
 
 %post
     apt-get -y update
@@ -18,7 +18,7 @@ From: condaforge/mambaforge:latest
     python --version
 
 %help
-    Containerized Conda environment using mambaforge.
+    Containerized Conda environment using miniforge3.
     When running the container, run:
         eval "$(conda shell.bash hook)"
     first in order to activate the Conda environment.
